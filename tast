@@ -41,3 +41,4 @@ try:
     print(Fore.YELLOW + "scanning completed in %s" % t3)
 except KeyboardInterrupt:
     print(Fore.RED + "See You soon..♡♡♡")
+

@@ -1,0 +1,43 @@
+import os
+os.system("clear") 
+print (Loading...>>) 
+import socket
+import sys
+from time import sleep
+from datetime import datetime
+from colorama import init, Fore, Style
+
+# تهيئة colorama
+init(autoreset=True)
+
+#################
+from colorama import init, Fore, Style
+
+init(autoreset=True)
+
+print(Fore.GREEN + "****************************************")
+print(Fore.GREEN + "*              " + Fore.CYAN + "Developed>
+print(Fore.GREEN + "*               " + Fore.CYAN + "Abu Most>
+print(Fore.GREEN + "****************************************")
+##################
+ip = input(Fore.CYAN + "==>༺༽༼༻<==ENTER YOUR IP TO START ==>༺>
+t1 = datetime.now()
+print(Fore.YELLOW + "scanning start../  %s  Please wait../." >
+sleep(1)
+################
+try:
+    for port in range(1, 65536):
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.settimeout(10)
+        if s.connect_ex((ip, port)) == 0:
+            try:
+                serv = socket.getservbyport(port)
+            except socket.error:
+                serv = "Unknown service"
+            print(Fore.GREEN + "Port %s Open service:%s" % (p>
+        s.close()
+    t2 = datetime.now()
+    t3 = t2 - t1
+    print(Fore.YELLOW + "scanning completed in %s" % t3)
+except KeyboardInterrupt:
+    print(Fore.RED + "See You soon..♡♡♡")
